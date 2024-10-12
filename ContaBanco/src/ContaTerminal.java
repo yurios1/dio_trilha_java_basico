@@ -11,21 +11,21 @@ public class ContaTerminal {
 
         //Exibir a mensagem conta criada;
 
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scan = new Scanner(System.in).useLocale(Locale.US);
         
         System.out.println("Numero da Conta: ");
-        int numberAC = scanner.nextInt();
+        int numberAC = scan.nextInt();
 
         System.out.println("Agencia: ");
-        String numberAgency = scanner.next();
+        String numberAgency = scan.next();
 
-        scanner.nextLine();
+        scan.nextLine();
 
         System.out.println("Nome do Cliente: ");
-        String nameClient = scanner.nextLine();
+        String nameClient = scan.nextLine();
 
         System.out.println("Saldo: ");
-        double currency = scanner.nextDouble();
+        double currency = scan.nextDouble();
 
         System.out.println("Cliente cadastrado com Sucesso.");
         System.out.println("Cliente: " + nameClient);
@@ -35,7 +35,6 @@ public class ContaTerminal {
 
         System.out.println("Olá " + nameClient + ", obrigado por criar uma conta em nosso banco!");
         System.out.println("Sua agência é " + numberAgency + ", conta " + numberAC + ", e seu saldo " + currency + ", já está disponìvel para saque.".formatted(nameClient, numberAgency, numberAC, currency));
-
 
     }
 
